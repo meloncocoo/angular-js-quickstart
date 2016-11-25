@@ -29,7 +29,7 @@ We recommend [nvm](https://github.com/creationix/nvm) for managing multiple vers
 
 Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
-git clone  https://github.com/angular/quickstart  my-proj
+git clone  https://github.com/meloncocoo/angular-js-quickstart  my-proj
 cd my-proj
 ```
 
