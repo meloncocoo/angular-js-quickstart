@@ -17,7 +17,7 @@ import './rxjs-extensions';
 @NgModule({
   imports: [
     BrowserModule,
-    CoreModule,
+    CoreModule, // .forRoot({userName: 'Miss Marple'}),
     HeroModule,
     ContactModule,
     AppRoutingModule
