@@ -1,27 +1,28 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
 
+/* App Root */
 import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard.component';
-import { HeroDetailComponent }  from './hero-detail.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroService }          from './hero.service';
+
+/* Routing Module */
 import { AppRoutingModule }     from './app-routing.module';
+
+/* Feature Modules */
+import { CoreModule }         from './core/core.module';
+import { ContactModule }      from './contact/contact.module';
+import { HeroModule }         from './hero/hero.module';
+
+import './rxjs-extensions';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
+    CoreModule,
+    HeroModule,
+    ContactModule,
     AppRoutingModule
   ],
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    HeroDetailComponent,
-    HeroesComponent
-  ],
-  providers: [ HeroService ],
+  declarations: [ AppComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
